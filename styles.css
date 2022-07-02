@@ -18,7 +18,7 @@ body {
     background-color: black;
     display: flex;
     justify-content: space-between;
-    height: 25px ;
+    height: 25px;
 }
 
 .toolbar-list-items {
@@ -37,13 +37,13 @@ body {
     font-size: 11px;
 }
 
-.toolbar-list-items .toolbar-item a{
+.toolbar-list-items .toolbar-item a {
     color: white;
     font-weight: bold;
     font-weight: bolder;
     margin-left: 12px;
     text-decoration: none;
- 
+
 }
 
 .toolbar-search {
@@ -86,7 +86,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    
+
 }
 
 .trending-container {
@@ -97,7 +97,8 @@ body {
     width: 33%;
 }
 
-.trending-item, .trending-item a {
+.trending-item,
+.trending-item a {
     text-decoration: none;
     color: white;
     height: 30px;
@@ -105,7 +106,7 @@ body {
     font-size: 14px;
 }
 
-.trending-item a{
+.trending-item a {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50px;
 }
@@ -136,12 +137,12 @@ body {
     background-color: #980d17;
 }
 
-.nav-item a{
+.nav-item a {
     text-decoration: none;
     color: white;
     font-size: 13px;
     line-height: 40px;
-    
+
 }
 
 .line {
@@ -153,7 +154,7 @@ body {
     display: inline-block;
     width: 67.66%;
     margin-top: 20px;
-    
+
 }
 
 .left-article {
@@ -205,7 +206,7 @@ body {
     /* overflow: hidden; */
 }
 
-.slide-list-item .slide-item{
+.slide-list-item .slide-item {
     list-style-type: none;
     width: 250px;
     display: i;
@@ -222,7 +223,7 @@ body {
     display: flex;
     max-width: 800px;
     position: relative;
-
+    overflow: hidden;
 }
 
 .body-content-3-slider-item {
@@ -244,14 +245,17 @@ body {
 .body-content-3-item-text p {
     margin-top: 10px;
     font-size: 17px;
-        line-height: 22px;
-        color: #2d2d2d;
+    line-height: 22px;
+    color: #2d2d2d;
     font-weight: 700;
+
 }
 
 .mySlides {
-    display: none;
+    /* display: none; */
+    position: relative;
     width: calc(1 / 3);
+    transition: 0.5s;
 }
 
 
@@ -264,15 +268,17 @@ body {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
-  }
+    transition: background-color 0.1s ease;
+}
 
-  .active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #fb512a;
-  }
+}
 
-  .prev, .next {
-    /* cursor: pointer; */
+.prev,
+.next {
+    cursor: pointer;
     position: absolute;
     top: 55px;
     width: 35px;
@@ -285,29 +291,23 @@ body {
     font-size: 18px;
     transition: 0.6s ease;
     /* border-radius: 0 3px 3px 0; */
-    user-select: none;
+    /* user-select: none; */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .next {
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-    background-color:  rgba(251,108,39,.9);
-  }
+    background-color: rgba(251, 108, 39, 0.8);
+}
 
-  .body-content-3:hover .prev {
-      visibility:inherit;
-      background-color:rgba(0,0,0,0.8);
-      animation: fade 700ms ;
-  }
+.prev {
+    background-color: rgba(251, 108, 39, 0.8);
+}
 
-  .prev {
-      visibility: hidden;
-      
-  }
-
-.next:hover {
-    background-color: rgba(251,108,39,1);
-  }
+.next:hover,
+.prev:hover {
+    background-color: rgba(251, 108, 39, 1);
+}
